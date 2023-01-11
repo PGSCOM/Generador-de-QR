@@ -7,7 +7,7 @@ with open("qr.txt", "r") as f:
 # Recorrer las líneas en el archivo
 for i, line in enumerate(lines):
     # Crear un objeto QR
-    qr = qrcode.QRCode(version=1, box_size=10, border=0)
+    qr = qrcode.QRCode(version=1, box_size=10, border=5)
     
     # Agregar el texto a codificar
     qr.add_data(line.strip())
@@ -16,4 +16,4 @@ for i, line in enumerate(lines):
     img = qr.make_image()
     
     # Guardar la imagen en disco
-    img.save(f"{i + 1}.png")
+    img.save(f"{i + 1}.png")    img.save(nombre_archivo)
