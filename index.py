@@ -14,6 +14,8 @@ for i, line in enumerate(lines):
     
     # Generar la imagen
     img = qr.make_image()
+    nombre_archivo= f"{i + 1}.png"
     
     # Guardar la imagen en disco
-    img.save(f"{i + 1}.png")    img.save(nombre_archivo)
+    img.save(nombre_archivo)
+    print(f"Archivo {nombre_archivo} creado con valor {line.strip()}")
