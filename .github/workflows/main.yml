@@ -1,4 +1,4 @@
-- name: Sync branches
+- name: Sync_branches
   # You may pin to the exact commit or the version.
   # uses: TreTuna/sync-branches@ea58ab6e406fd3ad016a064b31270bbb41127f41
   uses: TreTuna/sync-branches@1.4.0
