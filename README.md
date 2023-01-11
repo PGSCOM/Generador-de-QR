@@ -1,2 +1,2 @@
 # Generador de QR
- Generador de QR que consulta en un .txt el contenido de los QR que tiene que generar.
+ Programa de python que genera QRs a partir de un archivo .txt
