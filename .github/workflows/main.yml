@@ -1,0 +1,23 @@
+- name: Sync branches
+  # You may pin to the exact commit or the version.
+  # uses: TreTuna/sync-branches@ea58ab6e406fd3ad016a064b31270bbb41127f41
+  uses: TreTuna/sync-branches@1.4.0
+  with:
+    # User token to be associated with this pull request.
+    GITHUB_TOKEN: ${{ secrets.TOKEN }}
+    # Branch from make pull-request from
+    FROM_BRANCH: main
+    # Branch to make the pull-request against
+    TO_BRANCH: desde0
+    # What you would like as the title of the pull request. Default: 'sync: {FROM_BRANCH} to {TO_BRANCH}'
+    PULL_REQUEST_TITLE: # optional
+    # What you would like in the body of the pull request. Default: 'New code has just landed in {fromBranch} so let's bring {toBranch} up to speed!'
+    PULL_REQUEST_BODY: # optional
+    # Set to 'true' for the pull request to be opened as a draft. Default: 'false'
+    PULL_REQUEST_IS_DRAFT: # optional
+    # Set to 'true' to force checking content comparison between the branches. Default: 'false'
+    CONTENT_COMPARISON: # optional
+    # JSON array of GitHub user `login`s that will be requested to review the PR. Example: '['tretuna']'
+    REVIEWERS: # optional, default is []
+    # JSON array of GitHub team `slug`s that will be requested to review the PR. Example: '['js-team']'
+    TEAM_REVIEWERS: # optional, default is []
