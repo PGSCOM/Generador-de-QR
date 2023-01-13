@@ -1,0 +1,4 @@
+# Ignorar archivos del sistema Mac 
+.DS_store
+# Ignorar codigos QR generados
+*.png
